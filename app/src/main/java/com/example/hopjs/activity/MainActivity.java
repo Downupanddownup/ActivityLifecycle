@@ -24,7 +24,21 @@ import android.view.View;
 02-27 20:20:38.580 16400-16400/com.example.hopjs.activity I/MainActivityTTTT: MainActivity:onStart,ThreadId:16400
 02-27 20:20:38.581 16400-16400/com.example.hopjs.activity I/MainActivityTTTT: MainActivity:onResume,ThreadId:16400
 02-27 20:20:38.923 16400-16400/com.example.hopjs.activity I/MainActivityTTTT: MainActivity222:onStop,ThreadId:16400
-02-27 20:20:38.923 16400-16400/com.example.hopjs.activity I/MainActivityTTTT: MainActivity222:onDestroy,ThreadId:16400*/
+02-27 20:20:38.923 16400-16400/com.example.hopjs.activity I/MainActivityTTTT: MainActivity222:onDestroy,ThreadId:16400
+*目的：了解何时会启动数据读取函数
+* 操作：开启程序，旋转屏幕90°
+* 结果：
+* 02-27 20:32:56.442 18690-18690/com.example.hopjs.activity I/MainActivityTTTT: MainActivity:onRestart,ThreadId:18690
+02-27 20:32:56.443 18690-18690/com.example.hopjs.activity I/MainActivityTTTT: MainActivity:onStart,ThreadId:18690
+02-27 20:32:56.443 18690-18690/com.example.hopjs.activity I/MainActivityTTTT: MainActivity:onResume,ThreadId:18690
+02-27 20:32:59.564 18690-18690/com.example.hopjs.activity I/MainActivityTTTT: MainActivity:onPause,ThreadId:18690
+02-27 20:32:59.564 18690-18690/com.example.hopjs.activity I/MainActivityTTTT: MainActivity:onSaveInstanceState,ThreadId:18690
+02-27 20:32:59.565 18690-18690/com.example.hopjs.activity I/MainActivityTTTT: MainActivity:onStop,ThreadId:18690
+02-27 20:32:59.565 18690-18690/com.example.hopjs.activity I/MainActivityTTTT: MainActivity:onDestroy,ThreadId:18690
+02-27 20:32:59.692 18690-18690/com.example.hopjs.activity I/MainActivityTTTT: MainActivity:onCreate,ThreadId:18690
+02-27 20:32:59.693 18690-18690/com.example.hopjs.activity I/MainActivityTTTT: MainActivity:onStart,ThreadId:18690
+02-27 20:32:59.693 18690-18690/com.example.hopjs.activity I/MainActivityTTTT: MainActivity:onRestoreInstanceState,ThreadId:18690
+02-27 20:32:59.694 18690-18690/com.example.hopjs.activity I/MainActivityTTTT: MainActivity:onResume,ThreadId:18690*/
 public class MainActivity extends AppCompatActivity {
 
     @Override
